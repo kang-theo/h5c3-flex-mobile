@@ -1,10 +1,26 @@
 body {
-    max-width: 540px;
-    min-width: 320px;
-    margin: 0 auto;
-    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
-    color: #000;
-    background: #f2f2f2;
-    overflow-x: hidden;
-    -webkit-tap-highlight-color: transparent;
+  max-width: 540px;
+  min-width: 320px;
+  margin: 0 auto;
+  font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei",
+    STXihei, hei;
+  color: #000;
+  background: #f2f2f2;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Search module */
+.search-index {
+  /* Fixed position has nothing with parent, It is relative to the screen. */
+  position: fixed; /* out of standard document flow  */
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%); /* compatible with old browsers*/
+  transform: translateX(-50%);
+  width: 100%;
+  min-width: 320px;
+  max-width: 540px;
+  height: 44px;
+  background-color: pink;
 }
