@@ -12,6 +12,7 @@ body {
 
 /* Search module */
 .search-index {
+  display: flex;
   /* Fixed position has nothing with parent, It is relative to the screen. */
   position: fixed; /* out of standard document flow  */
   top: 0;
@@ -23,4 +24,12 @@ body {
   max-width: 540px;
   height: 44px;
   background-color: pink;
+}
+.search {
+  flex: 1; /* remaining space is divided into one part */
+}
+.user {
+  width: 44px;
+  height: 44px;
+  background-color: purple;
 }
