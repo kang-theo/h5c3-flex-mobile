@@ -126,3 +126,42 @@ ul {
 .local-nav li .local-nav-icon-icon5 {
   background-position: 0 -128px;
 }
+/* Main nav module */
+nav {
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 0 4px 3px;
+}
+.nav-common {
+  display: flex;
+  height: 88px;
+  background-color: pink;
+}
+.nav-common:nth-child(2) {
+  margin: 3px 0;
+}
+.nav-items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.nav-items:nth-child(-n + 2) {
+  border-right: 1px solid #fff;
+}
+.nav-items a {
+  flex: 1;
+  text-align: center;
+  line-height: 44px;
+  color: #fff;
+  font-size: 14px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+.nav-items a:nth-child(1) {
+  border-bottom: 1px solid #fff;
+}
+.nav-items:nth-child(1) a {
+  border: 0;
+  background: url(../images/hotel.png) no-repeat bottom center;
+  background-size: 121px auto; /* 3X pic*/
+}
