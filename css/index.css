@@ -132,12 +132,12 @@ nav {
   border-radius: 8px;
   margin: 0 4px 3px;
 }
-.nav-common {
+.nav-row {
   display: flex;
   height: 88px;
   background-color: pink;
 }
-.nav-common:nth-child(2) {
+.nav-row :nth-child(2) {
   margin: 3px 0;
 }
 .nav-items {
@@ -164,4 +164,37 @@ nav {
   border: 0;
   background: url(../images/hotel.png) no-repeat bottom center;
   background-size: 121px auto; /* 3X pic*/
+}
+.nav-row:nth-child(1) {
+  background: -webkit-linear-gradient(left, #fa5a55, #fa994d);
+}
+.nav-row:nth-child(2) {
+  background: -webkit-linear-gradient(left, #4890ed, #538ced);
+}
+.nav-row:nth-child(3) {
+  background: -webkit-linear-gradient(left, #34c2a9, #6cd559);
+}
+/* Subnav entry */
+.subnav-entry {
+  display: flex;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 0 4px;
+  flex-wrap: wrap;
+}
+.subnav-entry li {
+  flex: 20%;
+}
+.subnav-entry a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subnav-entry-icon {
+  width: 28px;
+  height: 28px;
+  background-color: pink;
+  margin-top: 4px;
+  background: url(../images/subnav-bg.png) no-repeat;
+  background-size: 28px auto;
 }
