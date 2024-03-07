@@ -138,7 +138,7 @@ nav {
   background-color: pink;
 }
 .nav-row :nth-child(2) {
-  margin: 3px 0;
+  /* margin: 3px 0; */
 }
 .nav-items {
   flex: 1;
@@ -181,6 +181,7 @@ nav {
   border-radius: 8px;
   margin: 0 4px;
   flex-wrap: wrap;
+  padding: 5px 0;
 }
 .subnav-entry li {
   flex: 20%;
@@ -190,24 +191,51 @@ nav {
   flex-direction: column;
   align-items: center;
 }
-.subnav-entry-icon {
+.subnav-entry li a [class^="subnav-entry-icon"] {
   width: 28px;
   height: 28px;
   background-color: pink;
   margin-top: 4px;
-  background: url(../images/subnav-bg.png) no-repeat;
+  background: url(../images/subnav-bg.png) no-repeat 0 0;
   background-size: 28px auto;
 }
+.subnav-entry li a .subnav-entry-icon-2 {
+  background-position: 0 -32px;
+}
+.subnav-entry li a .subnav-entry-icon-3 {
+  background-position: 0 -64px;
+}
+.subnav-entry li a .subnav-entry-icon-4 {
+  background-position: 0 -96px;
+}
+.subnav-entry li a .subnav-entry-icon-5 {
+  background-position: 0 -128px;
+}
+.subnav-entry li a .subnav-entry-icon-6 {
+  background-position: 5px -160px;
+}
+.subnav-entry li a .subnav-entry-icon-7 {
+  background-position: 0 -192px;
+}
+.subnav-entry li a .subnav-entry-icon-8 {
+  background-position: 0 -224px;
+}
+.subnav-entry li a .subnav-entry-icon-9 {
+  background-position: 0 -256px;
+}
+.subnav-entry li a .subnav-entry-icon-10 {
+  background-position: 4px -288px;
+}
 /* Sales-box module */
-.saales-box {
-  border-top: 1px solid #bbb;
+.sales-box {
+  border-top: 1px solid #eee;
   background-color: #fff;
   margin: 4px;
 }
 .sales-hd {
   position: relative;
   height: 44px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
 }
 .sales-hd h2 {
   position: relative;
